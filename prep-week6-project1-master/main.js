@@ -62,9 +62,9 @@ $(document).ready(function(){
 
 // 7. Hide all paragraphs when one of them is clicked.
 
- $("#btn").click(function(){
+ $("p").click(function(){
 
-   $("p").toggle();
+   $("p").hide();
 
  });
 
@@ -73,7 +73,7 @@ $(document).ready(function(){
 // 8. Hide all images when one of them is clicked.
 $("img").click(function(){
 
-  $("img").toggle();
+  $("img").hide();
 
 });
 
@@ -81,7 +81,11 @@ $("img").click(function(){
 
 
 // 9. When the user clicks onto the image, toggle the paragraphs between hide and show.
+$("#btn").click(function(){
 
+  $("img").toggle();
+
+});
 
 
 
