@@ -32,13 +32,22 @@ $("#removeLi").click(function(){  //uses ID not selector
 })
 
 // Question #4
-
+$("li:last").click(function(){  //uses ID not selector
+  $("li:last").css("font-size", "40px")
+})
 
 // Question #5
+$(".cute").click(function(){  //uses ID not selector
+  $("div.clones").append($(".cute").clone());
+//    $("div.clones").append($(".cute").clone(true));
+})
 
 
   // Question #6
-
+  $("body").dblclick(function(){  //uses ID not selector
+    //$("#makeSquare").css("height", "300px");
+        $("#makeSquare").css("height", "300px");
+  })
 
 
 // Question #7
